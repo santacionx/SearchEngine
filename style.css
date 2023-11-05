@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+ 
+}
+.main_box{
+    background: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+.btn_one{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left:16px;
+    line-height: 16px;
+    cursor: pointer;
+    margin-top: 30PX;
+}
+.sidebar_menu{
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    /* background-color: rgba(255,255,255,0.1); */
+  
+    box-shadow:  0 0 4px rgba(255,255,255,0.5);
+    background: url("photo.jpg");
+    height: 100vh;
+    opacity: 0.9;
+    border-radius: 20PX;
+    transition: all 0.3s linear;
+}
+.sidebar_menu .logo{
+    position: absolute;
+    width: 100%;
+    line-height: 60px;
+    box-shadow:  0 2px 4px rgba(255,255,255,0.7);
+    border-radius: 20px 0px;
+    height:60px ;
+}
+.sidebar_menu .logo a{
+    position: absolute;
+    left: 50px;
+    /* top: -15px; */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+     
+    
+}
+.sidebar_menu .btn_two i {
+    color: grey;
+    /* font-size: 30px; */
+    line-height: 60px;
+    position: absolute;
+    left: 275px;
+    /* top: -15px; */
+    cursor: pointer;
+    opacity: 0;
+}
+.sidebar_menu .menu{
+    color: #DFCCFB;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+}
+
+.sidebar_menu .menu li{
+    margin-top: 6px;
+    padding: 10px 20px;
+    opacity: 0.7;
+}
+
+.sidebar_menu .menu i, a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.sidebar_menu .menu i{
+    padding: 8px;
+}
+.sidebar_menu .social_media{
+    color: white;
+    opacity: 1;
+    position: absolute;
+    left: 25%;
+    bottom: 50px;
+}
+.sidebar_menu .social_media i{
+    color: #DFCCFB;
+    opacity: 0.8;
+    padding: 0 5px;
+}
+#check{
+    display: none;
+}
+.sidebar_menu .menu li:hover{ 
+    box-shadow:  0 0 4px rgba(255, 255, 255, 0.5);
+    border-radius: 20PX;
+    color: #DFCCFB;
+    opacity: 1;
+}
+.btn_one i:hover{
+    font-size: 20px;
+    transition: all 0.3s linear;
+
+}
+.btn_two i:hover{
+    font-size: 20px;
+   
+    
+}
+.sidebar_menu .social_media i:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#check:checked ~ .sidebar_menu{
+    left: 0;
+}
+#check:checked ~ .btn_one i{
+   opacity: 0;
+}
+#check:checked ~ .sidebar_menu .btn_two i {
+    opacity: 1;
+ }
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Styles for the search icon */
+.search-container i.fa-regular.fa-search {
+    font-size: 20px;
+}
+
+#search-box {
+    text-align: center;
+    background: transparent;
+    width: 80%; /* Adjust the width as needed */
+    max-width: 400px;
+    padding: 20px;
+    margin: 0 10%; /* Center the search box */
+}
+
+#input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 20px;
+    outline: none;
+    transition: border 0.3s;
+    box-sizing: border-box;
+}
+
+#input:focus {
+    border: 2px solid #4e8bed;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-btn {
+    background: linear-gradient(to bottom right, #8079a6, #d45fff);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Adjust placeholder style */
+#input::placeholder {
+    color: #ccc;
+    font-size: 14px;
+}
