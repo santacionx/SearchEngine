@@ -13,7 +13,7 @@ This project is a simple clone of the Google search homepage. It includes a sear
 
 ## Demo
 
-You can view a live demo of this project at [Google Search Page Clone Demo](https:).
+You can view a live demo of this project at [Google Search Page Clone Demo](https://santacionx.github.io/SearchEngine/).
 
 ## Features
 
